@@ -9,6 +9,22 @@ package BT3;
  *
  * @author quan
  */
-public class Rectangle {
+public class Rectangle extends Shape{
+    private static Shape rectangle;
+    protected Rectangle(String brush, String frame, String paper){
+        super(brush, paper, frame);
+    }
+    public static Shape createRectangle(){
+        if(rectangle == null){
+            rectangle = new Rectangle("Brush-r", "Paper-r", "Frame-r");
+        }
+        return rectangle;
+    }
+    @Override
+    public String draw(){
+        return "Draw rectangle: " + getBrush() + " " 
+                                  + getPaper() + " " 
+                                  + getFrame();
+    }
     
 }

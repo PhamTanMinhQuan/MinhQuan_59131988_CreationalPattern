@@ -10,5 +10,5 @@ package BT3;
  * @author quan
  */
 public enum ShapeType {
-    
+    Rectangle, Triangle, Circle;
 }
