@@ -15,7 +15,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        HoaDon HD = new HoaDon.Builder().setHeader( new HoaDonHeader("666", "16/01/1999", "Minh Quan"))
+        .addDSHD( new CTHD("Laptop", 1, 5000000, 1)).build();
+        System.out.println(HD.toString());
+    } 
     
 }
