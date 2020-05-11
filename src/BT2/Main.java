@@ -15,7 +15,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        MyStringBuilder builder = new MyStringBuilder("Minh Quan").addString("16/01/1999")
+                .addFloat(1.6f).addbool(true);
+        System.out.println(builder.toString());
     }
     
 }
