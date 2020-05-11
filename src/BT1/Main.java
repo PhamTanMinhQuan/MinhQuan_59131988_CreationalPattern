@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package BT2;
+package BT1;
 
 /**
  *
  * @author quan
  */
-public class Main2 {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MyStringBuilder builder = new MyStringBuilder("Minh Quan").addString("16/01/1999")
-                .addFloat(1.6f).addbool(true);
-        System.out.println(builder.toString());
-    }
+        HoaDon HD = new HoaDon.Builder().setHeader( new HoaDonHeader("666", "16/01/1999", "Minh Quan"))
+        .addDSHD( new CTHD("Laptop", 1, 5000000, 1)).build();
+        System.out.println(HD.toString());
+    } 
     
 }

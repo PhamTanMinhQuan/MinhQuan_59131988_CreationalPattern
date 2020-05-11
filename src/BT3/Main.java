@@ -9,7 +9,7 @@ package BT3;
  *
  * @author quan
  */
-public class Main3 {
+public class Main {
 
     /**
      * @param args the command line arguments
